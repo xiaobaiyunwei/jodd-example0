@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.jodd:jodd-joy:3.6.4'
+    runtime 'mysql:mysql-connector-java:5.1.26'
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.3'
+}
