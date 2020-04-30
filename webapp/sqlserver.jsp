@@ -45,6 +45,7 @@
 						prepared_stmt.executeBatch();
 						conn.commit();
 						System.out.println("正在执行第"+i+"条记录！");
+						out.println("正在执行第"+i+"条记录！<br>");
 					}
 				}		
 				prepared_stmt.close();
@@ -61,6 +62,7 @@
 						stmt.executeBatch();
 						conn.commit();
 						System.out.println("正在执行第"+i+"条记录！");
+						out.println("正在执行第"+i+"条记录！<br>");
 					}
 				}		
 				stmt.close();
