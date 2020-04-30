@@ -2,7 +2,7 @@
 <%@ taglib prefix="j" uri="/jodd" %>
 <html>
 <body>
-<h1>Messages=222=</h1>
+<h1>Here is index page.</h1>
 
 <ul>
 <j:iter items="${messages}" var="msg">

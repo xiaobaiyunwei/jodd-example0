@@ -23,7 +23,7 @@
 	try     
 	{     
 		Class.forName("com.mysql.jdbc.Driver").newInstance();
-		String url="jdbc:mysql://192.168.190.11:3306/reuri?rewriteBatchedStatements=true";
+		String url="jdbc:mysql://192.168.190.11:3306/test?rewriteBatchedStatements=true";
 		String user="root";
 		String password="123qwe";
 		Connection   conn=   DriverManager.getConnection(url,user,password);
