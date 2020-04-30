@@ -28,7 +28,7 @@
 		String password="123qwe";
 		Connection   conn=   DriverManager.getConnection(url,user,password);
 		conn.setAutoCommit(false);
-	
+		int currentnumber=0;
 		int	stmt_type=1;
 		long start_time = System.currentTimeMillis();		
 		if (stmt_type==1)
@@ -50,6 +50,7 @@
 						prepared_stmt.executeBatch();
 						conn.commit();
 						System.out.println("正在执行第"+i+"条记录！");
+						out.println("正在执行第"+i+"条记录！<br>");
 					}
 				}		
 				prepared_stmt.close();
@@ -66,6 +67,7 @@
 						stmt.executeBatch();
 						conn.commit();
 						System.out.println("正在执行第"+i+"条记录！");
+						out.println("正在执行第"+i+"条记录！");
 					}
 				}		
 				stmt.close();
@@ -78,7 +80,7 @@
 	{
 		out.println(e);
 	}
-
+		
 	%>
 </body>
 </html>
